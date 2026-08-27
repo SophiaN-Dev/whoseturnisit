@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who's It?! — Whose Turn Is It? Free Random Name Picker</title>
+<meta name="description" content="Whose turn is it? Who's presenting? Who's doing the dishes? Who's It?! is a free, colorful random name picker — spin a wheel, pull a slot, or flip a card to decide. No sign up needed.">
+<meta name="keywords" content="whose turn is it, who's presenting, random name picker, who goes first, decision wheel, team picker">
+<meta property="og:title" content="Who's It?! — The Fair Way to Pick an Unlucky Winner">
+<meta property="og:description" content="Spin, shuffle, or flip your way to a random pick. Free, colorful, and a little chaotic.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FCEFD1">
+<link rel="canonical" href="https://whoseturnisit.online/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Who's it?!",
+  "url": "https://whoseturnisit.online/",
+  "description": "A free random name picker for deciding whose turn it is, who's presenting, or who goes first — spin a wheel, pull a slot, or flip a card.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I fairly decide whose turn it is?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add everyone's name to the list and hit Pick. The result is fully random, decided the instant you press the button, so nobody can say it was rigged."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this random name picker free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — Who's it?! is completely free to use, with no account or sign-up required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I save my list of names for next time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Save any list of names and load it again whenever you need to pick from that same group."
+      }
+    }
+  ]
+}
+</script>
+<style>
+  @font-face {
+    font-family: 'Handwriting';
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
+    src: url(data:font/otf;base64,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) format('opentype');
+  }
+
+  :root{
+    --bg:#FCEFD1;
+    --card:#FFFDF7;
+    --coral:#F0997B;
+    --coral-text:#4A1B0C;
+    --ink:#3D2B1A;
+    --ink-soft:#B5651D;
+    --white:#FFFDF7;
+    --danger:#993C1D;
+    --link-color:#4A1B0C;
+  }
+
+  [data-theme="dark"]{
+    --bg:#241832;
+    --card:#33223F;
+    --coral:#FF9E7A;
+    --coral-text:#3D160A;
+    --ink:#F5E9DA;
+    --ink-soft:#E0B98C;
+    --white:#33223F;
+    --danger:#FF8A75;
+    --link-color:#FFB495;
+  }
+
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+
+  .panel, .modal-box, .header-blob path, .footer-blob path, .mode-tab,
+  .slot-window, .reel-item, .load-menu{
+    transition:background-color .25s ease, color .25s ease, fill .25s ease;
+  }
+
+  html{ font-size:128%; } /* base bump: ~20.5px instead of 16px, scales every rem in the page */
+
+  html,body{
+    margin:0; padding:0;
+    background-color:var(--bg);
+    background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22220%22%20height%3D%22220%22%20viewBox%3D%220%200%20220%20220%22%3E%3Cg%20opacity%3D%220.65%22%3E%3Cpath%20d%3D%22M20%2010%20L23%2018%20L31%2019%20L25%2025%20L27%2033%20L20%2029%20L13%2033%20L15%2025%20L9%2019%20L17%2018%20Z%22%20fill%3D%22%23FAC775%22%2F%3E%3Ccircle%20cx%3D%2270%22%20cy%3D%2230%22%20r%3D%224%22%20fill%3D%22%239FE1CB%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%2215%22%20width%3D%2210%22%20height%3D%225%22%20rx%3D%222.5%22%20fill%3D%22%23F09595%22%20transform%3D%22rotate(20%20105%2017.5)%22%2F%3E%3Cpath%20d%3D%22M150%2040%20L153%2048%20L161%2049%20L155%2055%20L157%2063%20L150%2059%20L143%2063%20L145%2055%20L139%2049%20L147%2048%20Z%22%20fill%3D%22%23ED93B1%22%2F%3E%3Ccircle%20cx%3D%22190%22%20cy%3D%2220%22%20r%3D%223%22%20fill%3D%22%23B5D4F4%22%2F%3E%3Crect%20x%3D%2230%22%20y%3D%2290%22%20width%3D%229%22%20height%3D%225%22%20rx%3D%222.5%22%20fill%3D%22%23CECBF6%22%20transform%3D%22rotate(-15%2034%2092)%22%2F%3E%3Cpath%20d%3D%22M90%20100%20L93%20108%20L101%20109%20L95%20115%20L97%20123%20L90%20119%20L83%20123%20L85%20115%20L79%20109%20L87%20108%20Z%22%20fill%3D%22%23F0997B%22%2F%3E%3Ccircle%20cx%3D%22140%22%20cy%3D%22110%22%20r%3D%224%22%20fill%3D%22%23FAC775%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%2295%22%20width%3D%229%22%20height%3D%225%22%20rx%3D%222.5%22%20fill%3D%22%239FE1CB%22%20transform%3D%22rotate(25%20184%2097)%22%2F%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%22150%22%20r%3D%223%22%20fill%3D%22%23ED93B1%22%2F%3E%3Cpath%20d%3D%22M65%20165%20L68%20173%20L76%20174%20L70%20180%20L72%20188%20L65%20184%20L58%20188%20L60%20180%20L54%20174%20L62%20173%20Z%22%20fill%3D%22%23B5D4F4%22%2F%3E%3Crect%20x%3D%22110%22%20y%3D%22160%22%20width%3D%229%22%20height%3D%225%22%20rx%3D%222.5%22%20fill%3D%22%23F09595%22%20transform%3D%22rotate(-20%20114%20162)%22%2F%3E%3Ccircle%20cx%3D%22160%22%20cy%3D%22175%22%20r%3D%224%22%20fill%3D%22%23FAC775%22%2F%3E%3Cpath%20d%3D%22M195%20155%20L198%20163%20L206%20164%20L200%20170%20L202%20178%20L195%20174%20L188%20178%20L190%20170%20L184%20164%20L192%20163%20Z%22%20fill%3D%22%23CECBF6%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat:repeat;
+    background-size:220px 220px;
+    color:var(--ink);
+    font-family:'Handwriting', system-ui, sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+    transition:background-color .25s ease, color .25s ease;
+  }
+
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:32px 20px 60px;
+    position:relative;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    text-align:center;
+    margin-bottom:30px;
+    position:relative;
+    z-index:1;
+    padding:32px 16px 26px;
+  }
+
+  .header-blob{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+    pointer-events:none;
+  }
+  .header-blob path{ fill:var(--card); }
+  .header-inner{
+    position:relative;
+    z-index:1;
+  }
+
+  .header-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+  }
+
+  .title{
+    font-weight:700;
+    font-size:clamp(3rem, 9vw, 4.6rem);
+    line-height:1;
+    margin:0;
+    color:var(--ink);
+  }
+
+  .doodle{ flex:none; color:var(--coral); overflow:visible; }
+  .doodle-star-left{ transform:rotate(-8deg); }
+  .doodle-star-right{ transform:rotate(10deg); color:#639922; }
+
+  .tagline{
+    margin:14px 0 0;
+    font-size:1.3rem;
+    font-weight:400;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- Card shell ---------- */
+  .panel{
+    background:var(--card);
+    border-radius:24px;
+    padding:24px;
+    margin-bottom:18px;
+    position:relative;
+    z-index:1;
+  }
+
+  .seo-content{ text-align:left; margin-top:24px; }
+  .seo-content h2{
+    font-size:1.4rem;
+    font-weight:700;
+    margin:0 0 10px;
+    color:var(--ink);
+  }
+  .seo-content h3{
+    font-size:1.15rem;
+    font-weight:700;
+    margin:18px 0 6px;
+    color:var(--ink);
+  }
+  .seo-content p{
+    font-size:1.05rem;
+    line-height:1.6;
+    color:var(--ink-soft);
+    margin:0;
+  }
+
+
+  /* ---------- Name input ---------- */
+  .add-row{
+    display:flex;
+    gap:10px;
+    margin-bottom:14px;
+  }
+  .add-row input{
+    flex:1;
+    font-family:inherit;
+    font-size:1.2rem;
+    font-weight:400;
+    padding:13px 18px;
+    border:none;
+    border-radius:999px;
+    background:var(--bg);
+    color:var(--ink);
+    outline:none;
+  }
+  .add-row input:focus{
+    box-shadow:0 0 0 3px var(--coral);
+  }
+  .add-row input::placeholder{ color:var(--ink-soft); opacity:0.7; }
+
+  .btn{
+    font-family:inherit;
+    font-weight:700;
+    font-size:1.1rem;
+    border:none;
+    border-radius:999px;
+    padding:12px 22px;
+    cursor:pointer;
+    background:var(--card);
+    color:var(--ink);
+    transition:transform .08s ease, background-color .25s ease, color .25s ease;
+    white-space:nowrap;
+  }
+  .btn:active{ transform:scale(0.96); }
+  .btn-add{ background:var(--coral); color:var(--coral-text); }
+  .btn-save{ background:#B5D4F4; color:#042C53; }
+  .btn-clear{ background:var(--bg); color:var(--ink-soft); }
+
+  .chip-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    min-height:44px;
+  }
+  .chip{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:700;
+    font-size:1.1rem;
+    padding:9px 9px 9px 17px;
+    border-radius:999px;
+    animation:pop .25s ease;
+    transform-origin:center;
+    transition:transform .2s cubic-bezier(.34,1.56,.64,1), background-color .25s ease, color .25s ease;
+  }
+  @keyframes pop{
+    from{ transform:scale(0.6); opacity:0; }
+    to{ transform:scale(1); opacity:1; }
+  }
+  .chip:has(button:hover){
+    transform:rotate(-4deg) scale(1.05);
+  }
+  .chip button{
+    border:none;
+    background:rgba(255,255,255,0.55);
+    border-radius:50%;
+    width:22px; height:22px;
+    font-weight:700;
+    cursor:pointer;
+    line-height:1;
+    color:inherit;
+  }
+  .empty-hint{
+    color:var(--ink-soft);
+    font-weight:400;
+    font-size:1.1rem;
+    padding:8px 2px;
+  }
+
+  .utility-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:16px;
+    padding-top:16px;
+    border-top:2px dashed rgba(61,43,26,0.15);
+    position:relative;
+  }
+
+  .btn-load{ background:#ED93B1; color:#4B1528; }
+  .btn-load .chev{ margin-left:6px; display:inline-block; transition:transform .15s ease; }
+  .btn-load[aria-expanded="true"] .chev{ transform:rotate(180deg); }
+
+  .load-wrap{ position:relative; }
+
+  .load-menu{
+    display:none;
+    position:absolute;
+    top:calc(100% + 8px);
+    left:0;
+    min-width:240px;
+    max-width:100%;
+    max-height:260px;
+    overflow-y:auto;
+    background:var(--card);
+    border-radius:18px;
+    padding:10px;
+    box-shadow:0 10px 30px rgba(61,43,26,0.18);
+    z-index:30;
+  }
+  .load-menu.open{ display:block; }
+  .load-menu-empty{
+    color:var(--ink-soft);
+    font-size:1rem;
+    padding:10px 12px;
+  }
+  .load-menu-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:4px;
+    border-radius:14px;
+  }
+  .load-menu-item:hover{ background:var(--bg); }
+  .load-menu-item-name{
+    flex:1;
+    text-align:left;
+    font-family:inherit;
+    font-weight:700;
+    font-size:1.05rem;
+    color:var(--ink);
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:8px 10px;
+    border-radius:12px;
+  }
+  .load-menu-item-count{
+    color:var(--ink-soft);
+    font-weight:400;
+    font-size:0.9rem;
+    margin-left:4px;
+  }
+  .load-menu-item-delete{
+    flex:none;
+    width:28px; height:28px;
+    border-radius:50%;
+    border:none;
+    background:var(--bg);
+    color:var(--ink-soft);
+    font-weight:700;
+    cursor:pointer;
+    line-height:1;
+  }
+
+  /* ---------- Mode tabs ---------- */
+  .mode-tabs{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+    position:relative;
+  }
+  .mode-tab{
+    font-family:inherit;
+    font-weight:700;
+    padding:10px 22px 10px 16px;
+    border-radius:999px;
+    border:none;
+    background:var(--card);
+    color:var(--ink-soft);
+    cursor:pointer;
+    font-size:1.25rem;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .mode-tab svg{ flex:none; }
+  .tabs-spark{ flex:none; color:#FAC775; }
+  @media (max-width:420px){ .tabs-spark{ display:none; } }
+  .mode-tab.active{
+    background:var(--ink);
+    color:var(--bg);
+  }
+
+  /* ---------- Stage ---------- */
+  .stage{ text-align:center; padding:18px 10px 6px; }
+  #wheelSvg{
+    touch-action:none;
+    width:360px;
+    max-width:100%;
+    aspect-ratio:1/1;
+    overflow:visible;
+  }
+  #wheelSvg text{ font-family:'Handwriting', system-ui, sans-serif; }
+  .stage-mode{ display:none; }
+  .stage-mode.active{ display:block; }
+
+  /* Slots */
+  .slots-wrap{ display:flex; justify-content:center; margin:10px 0 20px; }
+  .slot-window{
+    width:min(340px, 88vw);
+    height:90px;
+    border-radius:20px;
+    background:var(--ink);
+    overflow:hidden;
+    position:relative;
+  }
+  .slot-window::before, .slot-window::after{
+    content:"";
+    position:absolute;
+    left:0; right:0;
+    height:26px;
+    z-index:2;
+    pointer-events:none;
+  }
+  .slot-window::before{ top:0; background:linear-gradient(var(--ink), transparent); }
+  .slot-window::after{ bottom:0; background:linear-gradient(transparent, var(--ink)); }
+  .reel{
+    position:absolute; left:0; right:0; top:0;
+    display:flex; flex-direction:column; align-items:center;
+    will-change:transform;
+  }
+  .reel-item{
+    height:90px;
+    display:flex; align-items:center; justify-content:center;
+    font-weight:700; font-size:1.9rem;
+    color:var(--bg);
+    padding:0 14px; text-align:center;
+  }
+
+  /* Cards */
+  .cards-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(84px, 1fr));
+    gap:12px;
+    max-width:560px;
+    margin:6px auto 22px;
+  }
+  .name-card{
+    aspect-ratio:3/4;
+    border-radius:18px;
+    display:flex; align-items:center; justify-content:center;
+    font-weight:700; font-size:1.05rem;
+    line-height:1.15;
+    text-align:center; padding:8px;
+    overflow:hidden;
+    word-break:break-word;
+    overflow-wrap:anywhere;
+    transition:transform .3s ease, opacity .3s ease, background-color .25s ease, color .25s ease;
+  }
+  .name-card.dim{ opacity:0.35; transform:scale(0.92); }
+  .name-card.winner{
+    transform:scale(1.18);
+    z-index:5;
+    animation:wobble .6s ease;
+  }
+  @keyframes wobble{
+    0%,100%{ transform:scale(1.18) rotate(0deg); }
+    25%{ transform:scale(1.18) rotate(-3deg); }
+    75%{ transform:scale(1.18) rotate(3deg); }
+  }
+
+  /* Pick button */
+  .pick-btn-wrap{ text-align:center; margin:10px 0 4px; position:relative; }
+  .pick-btn{
+    font-family:inherit;
+    font-weight:700;
+    font-size:1.7rem;
+    color:var(--coral-text);
+    background:var(--coral);
+    border:none;
+    border-radius:999px;
+    padding:17px 52px;
+    cursor:pointer;
+    transition:transform .08s ease, background-color .25s ease, color .25s ease;
+    position:relative;
+  }
+  .pick-btn:active{ transform:scale(0.96); }
+  .pick-btn:disabled{ opacity:0.55; cursor:not-allowed; }
+  .pick-btn:disabled:active{ transform:none; }
+
+  .pick-btn.pulse{ animation:pickPulse 1.8s ease-in-out infinite; }
+  @keyframes pickPulse{
+    0%, 100%{ transform:scale(1); box-shadow:0 0 0 0 rgba(240,153,123,0.55); }
+    50%{ transform:scale(1.045); box-shadow:0 0 0 16px rgba(240,153,123,0); }
+  }
+
+  /* Result */
+  .result{ text-align:center; margin:18px 0 6px; min-height:70px; }
+  .result-label{
+    font-weight:400;
+    color:var(--ink-soft);
+    font-size:1.1rem;
+  }
+  .result-name{
+    font-weight:700;
+    font-size:clamp(2.2rem, 10vw, 3.6rem);
+    color:var(--coral);
+    -webkit-text-stroke:1px var(--coral-text);
+    margin:2px 0 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.12em;
+    animation:resultPop .45s cubic-bezier(.34,1.56,.64,1);
+  }
+  .result-crown{
+    width:0.8em;
+    height:0.8em;
+    flex:none;
+    -webkit-text-stroke:0;
+    animation:crownBounce .6s ease .1s both;
+  }
+  @keyframes crownBounce{
+    0%{ transform:translateY(6px) rotate(-8deg); opacity:0; }
+    60%{ transform:translateY(-3px) rotate(6deg); opacity:1; }
+    100%{ transform:translateY(0) rotate(0deg); }
+  }
+  @keyframes resultPop{
+    0%{ transform:scale(0.3) rotate(-6deg); opacity:0; }
+    100%{ transform:scale(1) rotate(0deg); opacity:1; }
+  }
+
+  /* Sound toggle */
+  .sound-toggle{
+    position:fixed; top:16px; right:16px;
+    width:50px; height:50px;
+    border-radius:50%;
+    border:none;
+    background:var(--card);
+    cursor:pointer;
+    z-index:50;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--ink);
+    transition:transform .08s ease, background-color .25s ease, color .25s ease;
+  }
+  .sound-toggle:active{ transform:scale(0.94); }
+  .sound-toggle svg{ display:none; }
+  .sound-toggle .icon-on{ display:block; }
+  .sound-toggle.muted .icon-on{ display:none; }
+  .sound-toggle.muted .icon-off{ display:block; }
+
+  .theme-toggle{
+    position:fixed; top:16px; right:78px;
+    width:50px; height:50px;
+    border-radius:50%;
+    border:none;
+    background:var(--card);
+    cursor:pointer;
+    z-index:50;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--ink);
+    transition:transform .08s ease, background-color .25s ease, color .25s ease;
+  }
+  .theme-toggle:active{ transform:scale(0.94); }
+  .theme-toggle svg{ display:none; }
+  .theme-toggle .icon-light{ display:block; }
+  .theme-toggle.dark .icon-light{ display:none; }
+  .theme-toggle.dark .icon-dark{ display:block; }
+
+  footer{
+    text-align:center;
+    margin-top:30px;
+    padding:30px 16px 28px;
+    color:var(--ink-soft);
+    font-weight:400;
+    font-size:1.1rem;
+    position:relative;
+    z-index:1;
+  }
+  footer a{ color:var(--link-color); }
+
+  .footer-blob{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+    pointer-events:none;
+  }
+  .footer-blob path{ fill:var(--card); }
+  .footer-inner{
+    position:relative;
+    z-index:1;
+  }
+
+  .footer-heart{ display:block; margin:0 auto 14px; color:#ED93B1; }
+
+  .footer-links{
+    margin-top:10px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    font-size:1rem;
+  }
+  .link-btn{
+    font-family:inherit;
+    font-weight:700;
+    font-size:1rem;
+    color:var(--link-color);
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:2px 4px;
+    text-decoration:underline;
+    text-decoration-color:var(--coral);
+    text-underline-offset:3px;
+  }
+  .footer-dot{ color:var(--ink-soft); }
+
+  #confettiCanvas{
+    position:fixed; inset:0;
+    pointer-events:none;
+    z-index:100;
+  }
+
+  #pageLoader{
+    position:fixed; inset:0;
+    background:var(--bg);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    z-index:1000;
+    transition:opacity .35s ease, visibility .35s ease;
+  }
+  #pageLoader.hidden{ opacity:0; visibility:hidden; pointer-events:none; }
+  .loader-dot{
+    width:14px; height:14px;
+    border-radius:50%;
+    animation:loaderBounce 0.9s ease-in-out infinite;
+  }
+  @keyframes loaderBounce{
+    0%, 80%, 100%{ transform:scale(0.6); opacity:0.5; }
+    40%{ transform:scale(1); opacity:1; }
+  }
+
+  /* ---------- Modals ---------- */
+  .modal-overlay{
+    display:none;
+    position:fixed; inset:0;
+    background:rgba(61,43,26,0.45);
+    z-index:200;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+  }
+  .modal-overlay.open{ display:flex; }
+  .modal-box{
+    background:var(--card);
+    border-radius:26px;
+    padding:30px 28px;
+    max-width:440px;
+    width:100%;
+    max-height:82vh;
+    overflow-y:auto;
+    position:relative;
+  }
+  .modal-close{
+    position:absolute;
+    top:16px; right:16px;
+    width:38px; height:38px;
+    border-radius:50%;
+    border:none;
+    background:var(--bg);
+    color:var(--ink);
+    font-size:1.2rem;
+    font-weight:700;
+    cursor:pointer;
+    line-height:1;
+  }
+  .modal-box h2{
+    font-size:1.8rem;
+    font-weight:700;
+    margin:0 0 14px;
+    color:var(--ink);
+    padding-right:30px;
+  }
+  .modal-box p{
+    font-size:1.15rem;
+    line-height:1.55;
+    color:var(--ink);
+    margin:0 0 14px;
+  }
+  .modal-box p a{ color:var(--link-color); }
+  .modal-box p:last-child{ margin-bottom:0; }
+  .modal-box .btn{ margin-top:6px; display:inline-block; text-decoration:none; text-align:center; }
+  .modal-doodle{ display:block; margin-bottom:10px; color:var(--coral); }
+  .modal-input{
+    width:100%;
+    font-family:inherit;
+    font-size:1.15rem;
+    font-weight:400;
+    padding:13px 18px;
+    border:none;
+    border-radius:999px;
+    background:var(--bg);
+    color:var(--ink);
+    outline:none;
+    margin-bottom:6px;
+  }
+  .modal-input:focus{ box-shadow:0 0 0 3px var(--coral); }
+  .modal-error{ color:var(--danger); font-size:1rem; margin:0 0 10px; }
+
+  @media (max-width:480px){
+    .add-row{ flex-wrap:wrap; }
+    .add-row input{ min-width:100%; }
+    .doodle-star-left, .doodle-star-right{ display:none; }
+  }
+
+  @media (max-width:360px){
+    .sound-toggle, .theme-toggle{ width:42px; height:42px; top:10px; }
+    .sound-toggle{ right:10px; }
+    .theme-toggle{ right:58px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<div id="pageLoader" aria-hidden="true">
+  <div class="loader-dot" style="background:#F0997B; animation-delay:0s;"></div>
+  <div class="loader-dot" style="background:#9FE1CB; animation-delay:0.15s;"></div>
+  <div class="loader-dot" style="background:#ED93B1; animation-delay:0.3s;"></div>
+</div>
+
+<script>
+(function(){
+  try{
+    var saved = localStorage.getItem('whosit_theme');
+    var theme = (saved === 'light' || saved === 'dark') ? saved :
+      ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  }catch(e){}
+})();
+</script>
+
+<canvas id="confettiCanvas"></canvas>
+<button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">
+  <svg class="icon-light" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="12" cy="12" r="5" fill="currentColor" stroke="none"/>
+    <line x1="12" y1="1.5" x2="12" y2="4.5"/>
+    <line x1="12" y1="19.5" x2="12" y2="22.5"/>
+    <line x1="1.5" y1="12" x2="4.5" y2="12"/>
+    <line x1="19.5" y1="12" x2="22.5" y2="12"/>
+    <line x1="4.4" y1="4.4" x2="6.5" y2="6.5"/>
+    <line x1="17.5" y1="17.5" x2="19.6" y2="19.6"/>
+    <line x1="4.4" y1="19.6" x2="6.5" y2="17.5"/>
+    <line x1="17.5" y1="6.5" x2="19.6" y2="4.4"/>
+  </svg>
+  <svg class="icon-dark" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M15 3 C10 4 7 8 7 12.5 C7 17.5 11 21 16 21 C18 21 19.8 20.3 21 19 C19.5 19.6 17.8 19.7 16.2 19 C12.3 17.3 10.5 13 12.2 9 C13 7 14.5 5.2 16.5 4.2 C16 3.6 15.5 3.2 15 3 Z"/>
+  </svg>
+</button>
+<button class="sound-toggle" id="soundToggle" title="Toggle sound" aria-label="Toggle sound">
+  <svg class="icon-on" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" stroke="none"/>
+    <path d="M16 8c1.5 1.3 1.5 6.7 0 8"/>
+    <path d="M19 5c3 3 3 11 0 14"/>
+  </svg>
+  <svg class="icon-off" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" stroke="none"/>
+    <line x1="16" y1="9" x2="21" y2="15"/>
+    <line x1="21" y1="9" x2="16" y2="15"/>
+  </svg>
+</button>
+
+<div class="wrap">
+
+  <header>
+
+    <svg class="header-blob" viewBox="0 0 400 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M40,14 C160,-6 280,2 372,18 C398,26 400,60 392,100 C384,145 360,180 300,190 C220,202 120,196 55,178 C15,166 0,130 6,90 C10,55 16,26 40,14 Z"/>
+    </svg>
+    <div class="header-inner">
+      <div class="header-row">
+        <svg class="doodle doodle-star-left" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17 2 L20 13 L31 14 L22 21 L25 32 L17 25 L8 31 L11 20 L2 14 L13 13 Z" fill="currentColor"/>
+        </svg>
+        <h1 class="title">Who's it?!</h1>
+        <svg class="doodle doodle-star-right" width="26" height="26" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M17 2 L20 13 L31 14 L22 21 L25 32 L17 25 L8 31 L11 20 L2 14 L13 13 Z" fill="currentColor"/>
+        </svg>
+      </div>
+      <p class="tagline">The fair way to pick an unlucky or lucky :) winner!</p>
+    </div>
+  </header>
+
+  <section class="panel">
+    <div class="add-row">
+      <input type="text" id="nameInput" placeholder="Type a name and hit enter…" maxlength="40" />
+      <button class="btn btn-add" id="addBtn">Add</button>
+    </div>
+    <p class="modal-error" id="addWarning" style="display:none; margin:8px 2px 10px;"></p>
+    <div class="chip-row" id="chipRow">
+      <p class="empty-hint" id="emptyHint">Add at least 2 names to get started</p>
+    </div>
+    <div class="utility-row">
+      <button class="btn btn-save" id="saveListBtn">Save this list</button>
+      <div class="load-wrap">
+        <button class="btn btn-load" id="loadDropdownBtn" aria-haspopup="true" aria-expanded="false">
+          Load a saved list
+          <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2 4 L6 8 L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="load-menu" id="loadMenu" role="menu"></div>
+      </div>
+      <button class="btn btn-clear" id="clearBtn">Clear all</button>
+    </div>
+    <p class="modal-error" id="utilityWarning" style="display:none; margin:10px 2px 0;"></p>
+  </section>
+
+  <div class="mode-tabs">
+    <button class="mode-tab active" data-mode="wheel">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="12" cy="12" r="9"/>
+        <line x1="12" y1="3" x2="12" y2="21"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="5.5" y1="5.5" x2="18.5" y2="18.5"/>
+        <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/>
+      </svg>
+      Wheel
+    </button>
+    <svg class="tabs-spark" width="18" height="18" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17 2 L20 13 L31 14 L22 21 L25 32 L17 25 L8 31 L11 20 L2 14 L13 13 Z" fill="currentColor"/>
+    </svg>
+    <button class="mode-tab" data-mode="slots">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="3"/>
+        <line x1="9" y1="5" x2="9" y2="19"/>
+        <line x1="15" y1="5" x2="15" y2="19"/>
+      </svg>
+      Slots
+    </button>
+    <svg class="tabs-spark" width="18" height="18" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17 2 L20 13 L31 14 L22 21 L25 32 L17 25 L8 31 L11 20 L2 14 L13 13 Z" fill="currentColor"/>
+    </svg>
+    <button class="mode-tab" data-mode="cards">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="7" width="14" height="16" rx="2" transform="rotate(-10 9 15)"/>
+        <rect x="8" y="5" width="14" height="16" rx="2" transform="rotate(8 15 13)"/>
+      </svg>
+      Cards
+    </button>
+  </div>
+
+  <section class="panel stage">
+    <div class="stage-mode active" id="mode-wheel">
+      <svg id="wheelSvg" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+        <g id="wheelSlices" transform="rotate(0 180 180)"></g>
+        <polygon points="166,0 194,0 180,26" fill="#F0997B"/>
+      </svg>
+    </div>
+
+    <div class="stage-mode" id="mode-slots">
+      <div class="slots-wrap">
+        <div class="slot-window">
+          <div class="reel" id="reel"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage-mode" id="mode-cards">
+      <div class="cards-grid" id="cardsGrid"></div>
+    </div>
+
+    <div class="pick-btn-wrap">
+      <button class="pick-btn pulse" id="pickBtn">Pick!</button>
+    </div>
+
+    <div class="result" id="result"></div>
+  </section>
+
+  <footer>
+    <svg class="footer-blob" viewBox="0 0 400 170" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M38,12 C150,-6 270,0 362,14 C392,22 398,50 390,86 C382,124 362,152 305,162 C220,176 130,172 62,156 C18,146 2,116 8,82 C12,50 16,24 38,12 Z"/>
+    </svg>
+    <div class="footer-inner">
+      <svg class="footer-heart" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M13 22 C13 22,2 15,2 8 C2 3,7 1,13 7 C19 1,24 3,24 8 C24 15,13 22,13 22 Z" fill="currentColor"/>
+      </svg>
+      Made with love by Intent Labs ·
+      <a href="https://buymeacoffee.com/sophiann" target="_blank" rel="noopener">buy me a coffee</a>
+      <div class="footer-links">
+        <button class="link-btn" data-modal="aboutModal">About</button>
+        <span class="footer-dot">·</span>
+        <button class="link-btn" data-modal="howModal">How it works</button>
+        <span class="footer-dot">·</span>
+        <button class="link-btn" data-modal="privacyModal">Privacy</button>
+        <span class="footer-dot">·</span>
+        <button class="link-btn" data-modal="contactModal">Contact</button>
+      </div>
+    </div>
+  </footer>
+
+  <section class="panel seo-content">
+    <h2>Whose turn is it, anyway?</h2>
+    <p>Whether you're figuring out whose turn it is to present, who's doing the dishes, or who goes first in game night, Who's it?! is a free random name picker that settles it fairly every time. Add your names, hit Pick, and let the wheel, slots, or cards decide — no sign-up, no ads, just an honest random pick.</p>
+    <h3>How do I fairly decide whose turn it is?</h3>
+    <p>Add everyone's name to the list and hit Pick. The result is fully random, decided the instant you press the button, so nobody can say it was rigged — the wheel spin, slot pull, or card flip you see afterward is just for fun.</p>
+    <h3>Is this random name picker free?</h3>
+    <p>Yes — Who's it?! is completely free to use, with no account or sign-up required.</p>
+    <h3>Can I save my list of names for next time?</h3>
+    <p>Yes. Save any list of names and load it again whenever you need to pick from that same group — handy for a recurring team standup or a regular game night.</p>
+  </section>
+</div>
+
+<div class="modal-overlay" id="aboutModal">
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <svg class="modal-doodle" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M8 38 L20 14 L32 26 Z" fill="#F0997B"/>
+      <circle cx="30" cy="6" r="3" fill="#FAC775"/>
+      <circle cx="38" cy="14" r="2.5" fill="#B5D4F4"/>
+      <circle cx="24" cy="4" r="2" fill="#ED93B1"/>
+      <rect x="34" y="24" width="6" height="3" rx="1.5" fill="#9FE1CB" transform="rotate(20 37 25)"/>
+    </svg>
+    <h2>About who's it?!</h2>
+    <p>The idea for Who's it?! came about when it was time for presentations and we needed to find who would present. We decided to create a tool for it — and here it is!</p>
+    <p>It's free, it doesn't need an account, and your lists stay on your own device. Spin, shuffle, or flip your way to a decision, and let the wheel take the blame.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="howModal">
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <svg class="modal-doodle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="22" cy="22" r="19" fill="#D9ECFF"/>
+      <path d="M22 13 L22 22 L28 26" stroke="#2C5F8A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h2>How it works</h2>
+    <p>The moment you tap Pick, your browser picks a random name from your list — every name has exactly the same chance, no matter how many times you've spun before or who won last time.</p>
+    <p>The wheel spin, slot pull, or card shuffle you see afterward is just for fun — it's animated to land on the name that was already picked. It doesn't change the odds.</p>
+    <p>Everything happens on your own device. No names, picks, or lists are ever sent anywhere.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="privacyModal">
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <svg class="modal-doodle" width="42" height="46" viewBox="0 0 42 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M21 2 L38 9 V22 C38 33 30 41 21 44 C12 41 4 33 4 22 V9 Z" fill="#B5D4F4"/>
+      <path d="M14 22 L19 27 L29 15" stroke="#042C53" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h2>Privacy policy</h2>
+    <p>Who's it?! doesn't ask for an account or any personal information to work.</p>
+    <p>The names you add are stored only in your own browser's local storage. They never get sent to us or anyone else — if you clear your browser data, they're gone for good.</p>
+    <p>We don't currently use cookies or tracking. If we add advertising in the future, our ad partners may use cookies to serve relevant ads, and we'll update this page when that happens.</p>
+    <p>Questions? Reach us at <a href="mailto:intentlabs.co@gmail.com">intentlabs.co@gmail.com</a>.</p>
+    <p style="font-size:0.95rem; color:var(--ink-soft);">Last updated August 2026.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="contactModal">
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <svg class="modal-doodle" width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="2" y="4" width="44" height="30" rx="6" fill="#F4C0D1"/>
+      <path d="M4 8 L24 22 L44 8" stroke="#4B1528" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h2>Say hi!</h2>
+    <p>Got a feature idea, spotted a bug, or just want to say hi? We'd genuinely love to hear it.</p>
+    <a class="btn btn-add" href="mailto:intentlabs.co@gmail.com">Email us</a>
+  </div>
+</div>
+
+<div class="modal-overlay" id="saveListModal">
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <svg class="modal-doodle" width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="4" y="4" width="36" height="32" rx="6" fill="#B5D4F4"/>
+      <rect x="12" y="4" width="20" height="12" rx="3" fill="#FFFDF7"/>
+    </svg>
+    <h2>Save this list</h2>
+    <p>Give this group a name so you can find it again later.</p>
+    <input type="text" id="saveListInput" placeholder="e.g. Standup team" maxlength="40" class="modal-input" />
+    <p class="modal-error" id="saveListError" style="display:none;">Give it a name first.</p>
+    <button class="btn btn-add" id="saveListConfirm" style="width:100%; margin-top:6px;">Save list</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="clearConfirmModal">
+  <div class="modal-box">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <svg class="modal-doodle" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="22" cy="22" r="20" fill="#F5C4B3"/>
+      <path d="M15 15 L29 29 M29 15 L15 29" stroke="#4A1B0C" stroke-width="3.5" stroke-linecap="round"/>
+    </svg>
+    <h2>Clear all names?</h2>
+    <p>This empties your current list. Any lists you've saved separately are safe.</p>
+    <div style="display:flex; gap:10px;">
+      <button class="btn btn-clear" data-close style="flex:1;">Cancel</button>
+      <button class="btn btn-add" id="clearConfirmBtn" style="flex:1;">Clear all</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  let names = [];
+  let currentMode = 'wheel';
+  let isPicking = false;
+  let soundOn = true;
+
+  const PALETTE = [
+    {fill:'#FFD9E8', text:'#9C3B63'},
+    {fill:'#D9ECFF', text:'#2C5F8A'},
+    {fill:'#D8F5E0', text:'#1F7A4D'},
+    {fill:'#E8DDFF', text:'#5B3FA0'},
+    {fill:'#FFE3D1', text:'#A8571E'},
+    {fill:'#FFF3C0', text:'#8A6D1D'},
+    {fill:'#FFDADA', text:'#A8412E'},
+    {fill:'#D2F5F0', text:'#1B7A72'},
+  ];
+
+  const el = {
+    nameInput: document.getElementById('nameInput'),
+    addBtn: document.getElementById('addBtn'),
+    chipRow: document.getElementById('chipRow'),
+    emptyHint: document.getElementById('emptyHint'),
+    addWarning: document.getElementById('addWarning'),
+    saveListBtn: document.getElementById('saveListBtn'),
+    loadDropdownBtn: document.getElementById('loadDropdownBtn'),
+    loadMenu: document.getElementById('loadMenu'),
+    clearBtn: document.getElementById('clearBtn'),
+    pickBtn: document.getElementById('pickBtn'),
+    result: document.getElementById('result'),
+    soundToggle: document.getElementById('soundToggle'),
+    themeToggle: document.getElementById('themeToggle'),
+    wheelSlices: document.getElementById('wheelSlices'),
+    reel: document.getElementById('reel'),
+    cardsGrid: document.getElementById('cardsGrid'),
+    saveListModal: document.getElementById('saveListModal'),
+    saveListInput: document.getElementById('saveListInput'),
+    saveListError: document.getElementById('saveListError'),
+    saveListConfirm: document.getElementById('saveListConfirm'),
+    clearConfirmModal: document.getElementById('clearConfirmModal'),
+    clearConfirmBtn: document.getElementById('clearConfirmBtn'),
+    utilityWarning: document.getElementById('utilityWarning'),
+  };
+
+  const CURRENT_KEY = 'whosit_current_names';
+  const LISTS_KEY = 'whosit_saved_lists';
+
+  function loadCurrent(){
+    try{
+      const raw = localStorage.getItem(CURRENT_KEY);
+      names = raw ? JSON.parse(raw) : [];
+    }catch(e){ names = []; }
+  }
+  function persistCurrent(){
+    try{ localStorage.setItem(CURRENT_KEY, JSON.stringify(names)); }catch(e){}
+  }
+  function getSavedLists(){
+    try{
+      const raw = localStorage.getItem(LISTS_KEY);
+      return raw ? JSON.parse(raw) : {};
+    }catch(e){ return {}; }
+  }
+  function setSavedLists(obj){
+    try{ localStorage.setItem(LISTS_KEY, JSON.stringify(obj)); }catch(e){}
+  }
+  function refreshListDropdown(){
+    const lists = getSavedLists();
+    const keys = Object.keys(lists);
+    el.loadMenu.innerHTML = '';
+    if(keys.length === 0){
+      const empty = document.createElement('p');
+      empty.className = 'load-menu-empty';
+      empty.textContent = 'No saved lists yet.';
+      el.loadMenu.appendChild(empty);
+      return;
+    }
+    keys.forEach(key=>{
+      const row = document.createElement('div');
+      row.className = 'load-menu-item';
+
+      const nameBtn = document.createElement('button');
+      nameBtn.className = 'load-menu-item-name';
+      nameBtn.innerHTML = escapeHtml(key) + '<span class="load-menu-item-count"> (' + lists[key].length + ')</span>';
+      nameBtn.addEventListener('click', ()=>{
+        names = lists[key].slice();
+        persistCurrent();
+        renderChips();
+        closeLoadMenu();
+      });
+
+      const delBtn = document.createElement('button');
+      delBtn.className = 'load-menu-item-delete';
+      delBtn.textContent = '×';
+      delBtn.setAttribute('aria-label', 'Delete list ' + key);
+      delBtn.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        const current = getSavedLists();
+        delete current[key];
+        setSavedLists(current);
+        refreshListDropdown();
+      });
+
+      row.appendChild(nameBtn);
+      row.appendChild(delBtn);
+      el.loadMenu.appendChild(row);
+    });
+  }
+
+  function openLoadMenu(){
+    el.loadMenu.classList.add('open');
+    el.loadDropdownBtn.setAttribute('aria-expanded', 'true');
+  }
+  function closeLoadMenu(){
+    el.loadMenu.classList.remove('open');
+    el.loadDropdownBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  function escapeHtml(s){
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  // Slots show one name per fixed-height row, so unlike cards they can't
+  // wrap onto a second line — long names need a hard truncation instead.
+  function truncateDisplayName(name, maxLen){
+    return name.length > maxLen ? name.slice(0, maxLen - 1) + '…' : name;
+  }
+
+  function renderChips(){
+    el.chipRow.innerHTML = '';
+    if(names.length === 0){
+      el.chipRow.appendChild(el.emptyHint);
+      renderWheel(); renderCards(); renderReel();
+      return;
+    }
+    names.forEach((n, i)=>{
+      const colors = PALETTE[i % PALETTE.length];
+      const chip = document.createElement('div');
+      chip.className = 'chip';
+      chip.style.background = colors.fill;
+      chip.style.color = colors.text;
+      chip.innerHTML = '<span>'+escapeHtml(n)+'</span>';
+      const rm = document.createElement('button');
+      rm.textContent = '×';
+      rm.setAttribute('aria-label', 'Remove ' + n);
+      rm.addEventListener('click', ()=>{
+        names.splice(i,1);
+        persistCurrent();
+        renderChips();
+        playRemove();
+      });
+      chip.appendChild(rm);
+      el.chipRow.appendChild(chip);
+    });
+    renderWheel(); renderCards(); renderReel();
+  }
+
+  let addWarningTimeout = null;
+  function showAddWarning(msg){
+    el.addWarning.textContent = msg;
+    el.addWarning.style.display = 'block';
+    if(addWarningTimeout) clearTimeout(addWarningTimeout);
+    addWarningTimeout = setTimeout(()=>{ el.addWarning.style.display = 'none'; }, 2600);
+  }
+
+  function addName(){
+    const v = el.nameInput.value.trim();
+    if(!v) return;
+    // Case-insensitive so "Sam" and "sam" still count as the same person.
+    const isDuplicate = names.some(n => n.toLowerCase() === v.toLowerCase());
+    if(isDuplicate){
+      showAddWarning('"' + v + '" is already on the list!');
+      el.nameInput.value = '';
+      return;
+    }
+    el.addWarning.style.display = 'none';
+    names.push(v);
+    el.nameInput.value = '';
+    persistCurrent();
+    renderChips();
+    playTick();
+  }
+
+  el.addBtn.addEventListener('click', addName);
+  el.nameInput.addEventListener('keydown', (e)=>{
+    if(e.key === 'Enter'){ e.preventDefault(); addName(); }
+  });
+
+  el.clearBtn.addEventListener('click', ()=>{
+    if(names.length === 0) return;
+    el.clearConfirmModal.classList.add('open');
+  });
+  el.clearConfirmBtn.addEventListener('click', ()=>{
+    names = [];
+    persistCurrent();
+    el.result.innerHTML = '';
+    renderChips();
+    el.clearConfirmModal.classList.remove('open');
+  });
+
+  let warningTimeout = null;
+  function showUtilityWarning(msg){
+    el.utilityWarning.textContent = msg;
+    el.utilityWarning.style.display = 'block';
+    if(warningTimeout) clearTimeout(warningTimeout);
+    warningTimeout = setTimeout(()=>{ el.utilityWarning.style.display = 'none'; }, 2600);
+  }
+
+  let pendingOverwriteName = null;
+
+  el.saveListBtn.addEventListener('click', ()=>{
+    if(names.length < 1){
+      showUtilityWarning('Add some names first!');
+      return;
+    }
+    el.saveListInput.value = '';
+    el.saveListError.style.display = 'none';
+    pendingOverwriteName = null;
+    el.saveListConfirm.textContent = 'Save list';
+    el.saveListModal.classList.add('open');
+    setTimeout(()=> el.saveListInput.focus(), 50);
+  });
+
+  function confirmSaveList(){
+    const listName = el.saveListInput.value.trim();
+    if(!listName){
+      el.saveListError.textContent = 'Give it a name first.';
+      el.saveListError.style.display = 'block';
+      return;
+    }
+    const lists = getSavedLists();
+    const alreadyExists = Object.prototype.hasOwnProperty.call(lists, listName);
+    if(alreadyExists && pendingOverwriteName !== listName){
+      // First click on a name that collides with an existing list: warn and
+      // wait for a second, deliberate click before overwriting anything.
+      pendingOverwriteName = listName;
+      el.saveListError.textContent = 'A list called "' + listName + '" already exists. Save again to overwrite it.';
+      el.saveListError.style.display = 'block';
+      el.saveListConfirm.textContent = 'Overwrite list';
+      return;
+    }
+    lists[listName] = names.slice();
+    setSavedLists(lists);
+    refreshListDropdown();
+    el.saveListModal.classList.remove('open');
+    playSaveChime();
+    pendingOverwriteName = null;
+    el.saveListConfirm.textContent = 'Save list';
+  }
+  el.saveListConfirm.addEventListener('click', confirmSaveList);
+  el.saveListInput.addEventListener('keydown', (e)=>{
+    if(e.key === 'Enter'){ e.preventDefault(); confirmSaveList(); }
+  });
+  el.saveListInput.addEventListener('input', ()=>{
+    el.saveListError.style.display = 'none';
+    if(el.saveListInput.value.trim() !== pendingOverwriteName){
+      pendingOverwriteName = null;
+      el.saveListConfirm.textContent = 'Save list';
+    }
+  });
+
+  el.loadDropdownBtn.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    if(el.loadMenu.classList.contains('open')) closeLoadMenu();
+    else openLoadMenu();
+  });
+  document.addEventListener('click', (e)=>{
+    if(!el.loadMenu.contains(e.target) && e.target !== el.loadDropdownBtn){
+      closeLoadMenu();
+    }
+  });
+
+  document.querySelectorAll('.mode-tab').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      if(isPicking) return;
+      document.querySelectorAll('.mode-tab').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      currentMode = btn.dataset.mode;
+      document.querySelectorAll('.stage-mode').forEach(s=>s.classList.remove('active'));
+      document.getElementById('mode-'+currentMode).classList.add('active');
+      el.result.innerHTML = '';
+      if(currentMode === 'wheel') renderWheel();
+      if(currentMode === 'cards') renderCards();
+      if(currentMode === 'slots') renderReel();
+    });
+  });
+
+  let audioCtx = null;
+  function ctx(){
+    if(!audioCtx){ audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+    return audioCtx;
+  }
+  el.soundToggle.addEventListener('click', ()=>{
+    soundOn = !soundOn;
+    el.soundToggle.classList.toggle('muted', !soundOn);
+  });
+
+  const THEME_KEY = 'whosit_theme';
+  function getTheme(){ return document.documentElement.getAttribute('data-theme') || 'light'; }
+  function setTheme(theme){
+    document.documentElement.setAttribute('data-theme', theme);
+    el.themeToggle.classList.toggle('dark', theme === 'dark');
+    try{ localStorage.setItem(THEME_KEY, theme); }catch(e){}
+  }
+  // Sync the icon to whatever the early inline snippet already applied
+  // (it runs before this to avoid a flash of the wrong theme on load).
+  el.themeToggle.classList.toggle('dark', getTheme() === 'dark');
+  el.themeToggle.addEventListener('click', ()=>{
+    setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+  });
+
+  function playTone(freq, dur, type, vol, delay){
+    if(!soundOn) return;
+    try{
+      const c = ctx();
+      const t0 = c.currentTime + (delay||0);
+      const osc = c.createOscillator();
+      const gain = c.createGain();
+      osc.type = type || 'sine';
+      osc.frequency.setValueAtTime(freq, t0);
+      gain.gain.setValueAtTime(0, t0);
+      gain.gain.linearRampToValueAtTime(vol||0.2, t0+0.01);
+      gain.gain.exponentialRampToValueAtTime(0.001, t0+dur);
+      osc.connect(gain).connect(c.destination);
+      osc.start(t0);
+      osc.stop(t0+dur+0.02);
+    }catch(e){}
+  }
+  function playTick(){ playTone(720, 0.06, 'square', 0.12); }
+  function playRemove(){ playTone(340, 0.08, 'sine', 0.12); }
+  function playSaveChime(){
+    [660, 880].forEach((f,i)=> playTone(f, 0.28, 'triangle', 0.15, i*0.09));
+  }
+  function playWhooshTick(pitch){ playTone(pitch||500, 0.05, 'square', 0.1); }
+  function playTada(){
+    const notes = [523.25, 659.25, 783.99, 1046.5];
+    notes.forEach((f,i)=> playTone(f, 0.5, 'triangle', 0.18, i*0.08));
+  }
+  function playDrumroll(steps){
+    for(let i=0;i<steps;i++){
+      playTone(150+Math.random()*40, 0.04, 'square', 0.08, i*0.045);
+    }
+  }
+
+  const confettiCanvas = document.getElementById('confettiCanvas');
+  const cctx = confettiCanvas.getContext('2d');
+  let confettiParticles = [];
+  let confettiRunning = false;
+
+  function resizeConfetti(){
+    confettiCanvas.width = window.innerWidth;
+    confettiCanvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resizeConfetti);
+  resizeConfetti();
+
+  function burstConfetti(){
+    const count = 120;
+    const colors = PALETTE.map(p=>p.fill);
+    for(let i=0;i<count;i++){
+      confettiParticles.push({
+        x: confettiCanvas.width/2 + (Math.random()-0.5)*120,
+        y: confettiCanvas.height*0.25,
+        vx: (Math.random()-0.5)*10,
+        vy: Math.random()*-8 - 4,
+        size: 6+Math.random()*6,
+        color: colors[Math.floor(Math.random()*colors.length)],
+        rot: Math.random()*360,
+        vrot: (Math.random()-0.5)*20,
+        life: 0,
+        maxLife: 90+Math.random()*40,
+        shape: Math.random()>0.5 ? 'rect' : 'circle'
+      });
+    }
+    if(!confettiRunning){ confettiRunning = true; animateConfetti(); }
+  }
+
+  function animateConfetti(){
+    cctx.clearRect(0,0,confettiCanvas.width, confettiCanvas.height);
+    confettiParticles.forEach(p=>{
+      p.vy += 0.22;
+      p.x += p.vx;
+      p.y += p.vy;
+      p.rot += p.vrot;
+      p.life++;
+      cctx.save();
+      cctx.translate(p.x, p.y);
+      cctx.rotate(p.rot*Math.PI/180);
+      cctx.globalAlpha = Math.max(0, 1 - p.life/p.maxLife);
+      cctx.fillStyle = p.color;
+      if(p.shape === 'rect'){
+        cctx.fillRect(-p.size/2, -p.size/4, p.size, p.size/2);
+      }else{
+        cctx.beginPath();
+        cctx.arc(0,0,p.size/2,0,Math.PI*2);
+        cctx.fill();
+      }
+      cctx.restore();
+    });
+    confettiParticles = confettiParticles.filter(p=> p.life < p.maxLife && p.y < confettiCanvas.height+40);
+    if(confettiParticles.length > 0){
+      requestAnimationFrame(animateConfetti);
+    }else{
+      confettiRunning = false;
+      cctx.clearRect(0,0,confettiCanvas.width, confettiCanvas.height);
+    }
+  }
+
+  const wheelSlices = el.wheelSlices;
+  const WHEEL_SIZE = 360;
+  let wheelRotation = 0; // radians, kept for spin math; converted to degrees for the SVG transform
+
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  function svgEl(tag, attrs){
+    const node = document.createElementNS(SVG_NS, tag);
+    for(const k in attrs) node.setAttribute(k, attrs[k]);
+    return node;
+  }
+
+  // Shrinks font size (and truncates as a last resort) so a wheel label
+  // always fits both its available radial length AND its slice's angular
+  // width — otherwise long names or many-name wheels overlap each other.
+  // SVG has no measureText, so width is estimated from this font's average
+  // character width; the multiplier includes a safety margin.
+  const CHAR_WIDTH_FACTOR = 0.6;
+  function fitWheelLabel(text, angularCapPx, maxWidthPx){
+    let fontSize = Math.max(9, Math.min(16, angularCapPx));
+    let label = text;
+    function estWidth(s, fs){ return s.length * fs * CHAR_WIDTH_FACTOR; }
+    while(estWidth(label, fontSize) > maxWidthPx && fontSize > 9){ fontSize -= 1; }
+    while(estWidth(label, fontSize) > maxWidthPx && label.length > 2){
+      label = label.slice(0, label.length - 2) + '…';
+    }
+    return { fontSize, label };
+  }
+
+  function renderWheel(){
+    const size = WHEEL_SIZE;
+    const cx = size/2, cy = size/2, r = size/2 - 8;
+    wheelSlices.innerHTML = '';
+    wheelSlices.setAttribute('transform', 'rotate(' + (wheelRotation * 180/Math.PI) + ' ' + cx + ' ' + cy + ')');
+
+    if(names.length === 0){
+      wheelSlices.appendChild(svgEl('circle', { cx, cy, r, fill:'#F5EFDC' }));
+
+      // A little sleepy face standing in for "nothing here yet" — friendlier
+      // than plain text alone.
+      const faceY = cy - 25;
+      wheelSlices.appendChild(svgEl('path', { d:'M'+(cx-18)+','+faceY+' Q'+cx+','+(faceY-16)+' '+(cx-6)+','+faceY, stroke:'#B5651D', 'stroke-width':2.5, 'stroke-linecap':'round', fill:'none' }));
+      wheelSlices.appendChild(svgEl('path', { d:'M'+(cx+6)+','+faceY+' Q'+(cx+18)+','+(faceY-16)+' '+(cx+24)+','+faceY, stroke:'#B5651D', 'stroke-width':2.5, 'stroke-linecap':'round', fill:'none' }));
+      wheelSlices.appendChild(svgEl('path', { d:'M'+(cx-14)+','+(faceY+18)+' Q'+cx+','+(faceY+32)+' '+(cx+14)+','+(faceY+18), stroke:'#B5651D', 'stroke-width':2.5, 'stroke-linecap':'round', fill:'none' }));
+      wheelSlices.appendChild(svgEl('circle', { cx:cx-22, cy:faceY+10, r:4.5, fill:'#F4C0D1', opacity:0.7 }));
+      wheelSlices.appendChild(svgEl('circle', { cx:cx+32, cy:faceY+10, r:4.5, fill:'#F4C0D1', opacity:0.7 }));
+
+      function sparkle(sx, sy, s){
+        return svgEl('path', {
+          d:'M'+sx+','+(sy-s)+' L'+(sx+s*0.35)+','+(sy-s*0.35)+' L'+(sx+s)+','+sy+' L'+(sx+s*0.35)+','+(sy+s*0.35)+' L'+sx+','+(sy+s)+' L'+(sx-s*0.35)+','+(sy+s*0.35)+' L'+(sx-s)+','+sy+' L'+(sx-s*0.35)+','+(sy-s*0.35)+' Z',
+          fill:'#FAC775'
+        });
+      }
+      wheelSlices.appendChild(sparkle(cx-55, faceY-25, 6));
+      wheelSlices.appendChild(sparkle(cx+58, faceY-10, 5));
+
+      const text = svgEl('text', {
+        x:cx, y:cy+60, 'text-anchor':'middle', fill:'#B5651D',
+        'font-size':16, 'font-weight':700
+      });
+      text.textContent = 'Add some names!';
+      wheelSlices.appendChild(text);
+      return;
+    }
+
+    const n = names.length;
+
+    // A wheel with exactly one name is a special case: the slice math below
+    // computes a 360° arc whose start and end point are identical, which SVG
+    // treats as an omitted (invisible) arc segment — the wheel would render
+    // blank. Draw a plain full circle with a centered label instead.
+    if(n === 1){
+      const colors = PALETTE[0];
+      wheelSlices.appendChild(svgEl('circle', { cx, cy, r, fill: colors.fill }));
+      const fit = fitWheelLabel(names[0], 16, (r - 30) * 2);
+      const text = svgEl('text', {
+        x:cx, y:cy + fit.fontSize * 0.32, 'text-anchor':'middle', fill: colors.text,
+        'font-size': fit.fontSize, 'font-weight': 700
+      });
+      text.textContent = fit.label;
+      wheelSlices.appendChild(text);
+      return;
+    }
+
+    const slice = (Math.PI*2) / n;
+
+    for(let i=0;i<n;i++){
+      const start = i*slice;
+      const end = start+slice;
+      const colors = PALETTE[i % PALETTE.length];
+      const x1 = cx + r*Math.cos(start), y1 = cy + r*Math.sin(start);
+      const x2 = cx + r*Math.cos(end), y2 = cy + r*Math.sin(end);
+      const largeArc = slice > Math.PI ? 1 : 0;
+      const path = svgEl('path', {
+        d: 'M'+cx+','+cy+' L'+x1+','+y1+' A'+r+','+r+' 0 '+largeArc+' 1 '+x2+','+y2+' Z',
+        fill: colors.fill
+      });
+      wheelSlices.appendChild(path);
+
+      const midAngle = start + slice/2;
+      const totalAngle = ((wheelRotation + midAngle) % (Math.PI*2) + Math.PI*2) % (Math.PI*2);
+      const flip = totalAngle > Math.PI/2 && totalAngle < Math.PI*1.5;
+      const angularCap = slice * (r - 16) * 0.8;
+      const maxRadialWidth = (r - 16) - 30;
+      const fit = fitWheelLabel(names[i], angularCap, maxRadialWidth);
+
+      const textX = cx + (r - 16) * Math.cos(midAngle);
+      const textY = cy + (r - 16) * Math.sin(midAngle);
+      const angleDeg = (midAngle * 180/Math.PI) + (flip ? 180 : 0);
+      const text = svgEl('text', {
+        x:textX, y:textY,
+        transform: 'rotate(' + angleDeg + ' ' + textX + ' ' + textY + ')',
+        'text-anchor': flip ? 'start' : 'end',
+        fill: colors.text,
+        'font-size': fit.fontSize,
+        'font-weight': 700,
+        dy: fit.fontSize * 0.32
+      });
+      text.textContent = fit.label;
+      wheelSlices.appendChild(text);
+    }
+
+    wheelSlices.appendChild(svgEl('circle', { cx, cy, r:24, fill:'#FFFDF7' }));
+  }
+
+  function spinWheel(winnerIndex){
+    return new Promise(resolve=>{
+      const n = names.length;
+      const slice = (Math.PI*2)/n;
+      const targetSliceCenter = winnerIndex*slice + slice/2;
+      // extraSpins MUST be a whole number of rotations — a fractional value here
+      // shifts where the wheel visually lands without changing the announced
+      // winner, so the pointer can stop on the wrong name. Whole turns only.
+      const extraSpins = 6 + Math.floor(Math.random()*3);
+      const desiredFinal = -Math.PI/2 - targetSliceCenter + Math.PI*2*extraSpins;
+      const startRotation = wheelRotation;
+      const delta = desiredFinal - (startRotation % (Math.PI*2));
+      const duration = 4200;
+      const startTime = performance.now();
+      let lastTickSlice = -1;
+
+      function easeOutCubic(t){ return 1 - Math.pow(1-t, 4); }
+
+      function frame(now){
+        const t = Math.min(1, (now-startTime)/duration);
+        const eased = easeOutCubic(t);
+        wheelRotation = startRotation + delta*eased;
+        renderWheel();
+
+        const normalized = ((wheelRotation % (Math.PI*2)) + Math.PI*2) % (Math.PI*2);
+        const currentSlice = Math.floor((((-Math.PI/2 - normalized) % (Math.PI*2) + Math.PI*2*10) % (Math.PI*2)) / slice);
+        if(currentSlice !== lastTickSlice){
+          lastTickSlice = currentSlice;
+          playWhooshTick(400 + Math.random()*200);
+        }
+
+        if(t < 1){ requestAnimationFrame(frame); } else { resolve(); }
+      }
+      requestAnimationFrame(frame);
+    });
+  }
+
+  function renderReel(){
+    el.reel.innerHTML = '';
+    el.reel.style.transform = 'translateY(0px)';
+    const list = names.length ? names : ['Add names!'];
+    list.forEach(n=>{
+      const item = document.createElement('div');
+      item.className = 'reel-item';
+      item.textContent = truncateDisplayName(n, 16);
+      el.reel.appendChild(item);
+    });
+  }
+
+  function spinSlots(winnerIndex){
+    return new Promise(resolve=>{
+      const n = names.length;
+      const itemHeight = 90;
+      const loops = 4;
+      const sequence = [];
+      for(let i=0;i<loops;i++){
+        for(let j=0;j<n;j++) sequence.push(j);
+      }
+      sequence.push(winnerIndex);
+
+      el.reel.innerHTML = '';
+      sequence.forEach(idx=>{
+        const item = document.createElement('div');
+        item.className = 'reel-item';
+        item.textContent = truncateDisplayName(names[idx], 16);
+        el.reel.appendChild(item);
+      });
+
+      const totalItems = sequence.length;
+      const finalOffset = (totalItems-1)*itemHeight;
+      const duration = 2600;
+      const startTime = performance.now();
+      let lastIndexPlayed = -1;
+
+      function easeOutQuart(t){ return 1 - Math.pow(1-t, 5); }
+
+      function frame(now){
+        const t = Math.min(1, (now-startTime)/duration);
+        const eased = easeOutQuart(t);
+        const currentOffset = finalOffset*eased;
+        el.reel.style.transform = 'translateY(' + (-currentOffset) + 'px)';
+
+        const idx = Math.floor(currentOffset/itemHeight);
+        if(idx !== lastIndexPlayed){
+          lastIndexPlayed = idx;
+          playWhooshTick(500);
+        }
+
+        if(t < 1){ requestAnimationFrame(frame); }
+        else{
+          el.reel.style.transform = 'translateY(-' + finalOffset + 'px)';
+          resolve();
+        }
+      }
+      requestAnimationFrame(frame);
+    });
+  }
+
+  function renderCards(){
+    el.cardsGrid.innerHTML = '';
+    names.forEach((n,i)=>{
+      const colors = PALETTE[i % PALETTE.length];
+      const card = document.createElement('div');
+      card.className = 'name-card';
+      card.style.background = colors.fill;
+      card.style.color = colors.text;
+      if(n.length > 18) card.style.fontSize = '0.75rem';
+      else if(n.length > 12) card.style.fontSize = '0.9rem';
+      card.textContent = n;
+      card.dataset.index = i;
+      el.cardsGrid.appendChild(card);
+    });
+  }
+
+  function shuffleCards(winnerIndex){
+    return new Promise(resolve=>{
+      const cards = Array.from(el.cardsGrid.children);
+      let round = 0;
+      const totalRounds = 10;
+      function step(){
+        cards.forEach(c=> c.classList.remove('winner'));
+        cards.forEach(c=>{
+          if(Math.random() > 0.5){ c.classList.add('dim'); }
+          else{ c.classList.remove('dim'); }
+        });
+        playTick();
+        round++;
+        if(round < totalRounds){
+          setTimeout(step, 90 + round*10);
+        }else{
+          cards.forEach(c=> c.classList.remove('dim'));
+          const winnerCard = cards[winnerIndex];
+          if(winnerCard) winnerCard.classList.add('winner');
+          resolve();
+        }
+      }
+      step();
+    });
+  }
+
+  el.pickBtn.addEventListener('click', async ()=>{
+    if(isPicking) return;
+    if(names.length < 2){ showUtilityWarning('Add at least 2 names first!'); return; }
+    isPicking = true;
+    el.pickBtn.classList.remove('pulse');
+    el.pickBtn.disabled = true;
+    el.result.innerHTML = '';
+    document.querySelectorAll('.mode-tab').forEach(b=> b.style.pointerEvents = 'none');
+
+    const winnerIndex = Math.floor(Math.random()*names.length);
+
+    if(currentMode === 'wheel'){
+      await spinWheel(winnerIndex);
+    }else if(currentMode === 'slots'){
+      playDrumroll(6);
+      await spinSlots(winnerIndex);
+    }else if(currentMode === 'cards'){
+      renderCards();
+      await shuffleCards(winnerIndex);
+    }
+
+    playTada();
+    burstConfetti();
+    el.result.innerHTML = '<div class="result-label">And it\'s…</div><div class="result-name"><svg class="result-crown" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 20 L3 16 L7 9 L10.5 14 L12 8 L13.5 14 L17 9 L21 16 L21 20 Z" fill="#FAC775" stroke="#412402" stroke-width="0.6" stroke-linejoin="round"/></svg>'+escapeHtml(names[winnerIndex])+'!</div>';
+
+    isPicking = false;
+    el.pickBtn.disabled = false;
+    document.querySelectorAll('.mode-tab').forEach(b=> b.style.pointerEvents = 'auto');
+  });
+
+  document.querySelectorAll('[data-modal]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const modal = document.getElementById(btn.dataset.modal);
+      if(modal) modal.classList.add('open');
+    });
+  });
+  document.querySelectorAll('.modal-overlay').forEach(overlay=>{
+    overlay.addEventListener('click', (e)=>{
+      if(e.target === overlay) overlay.classList.remove('open');
+    });
+    overlay.querySelectorAll('[data-close]').forEach(closeBtn=>{
+      closeBtn.addEventListener('click', ()=> overlay.classList.remove('open'));
+    });
+  });
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.modal-overlay.open').forEach(m=> m.classList.remove('open'));
+    }
+  });
+
+  loadCurrent();
+  refreshListDropdown();
+  renderChips();
+
+  // Hide the loading-dots overlay once the handwriting font is actually
+  // ready (it's embedded inline, so this is normally near-instant) — with a
+  // safety timeout so the page never gets stuck behind it either way.
+  (function hidePageLoaderWhenReady(){
+    const loader = document.getElementById('pageLoader');
+    if(!loader) return;
+    let hidden = false;
+    function hide(){
+      if(hidden) return;
+      hidden = true;
+      loader.classList.add('hidden');
+    }
+    if(document.fonts && document.fonts.ready){
+      document.fonts.ready.then(hide).catch(hide);
+    }else{
+      hide();
+    }
+    setTimeout(hide, 900);
+  })();
+})();
+</script>
+
+</body>
+</html>
